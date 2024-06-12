@@ -1,5 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css"
+import HelloWorld from '../components/HelloWorld'
+import Frase from '../components/Frase'
 
 export default function Home() {
 
@@ -19,6 +21,12 @@ export default function Home() {
       <div>{soma(2,2)}</div>
 
       <a href={url} target="_blank">Clique para ir para o video</a>
+
+      <HelloWorld/>
+
+    /*Pode sempre ser reutilizavel e chamar quantas vezes quiser */
+      <Frase/>
+      <Frase/>
     </>
   );
 }
