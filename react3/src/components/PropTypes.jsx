@@ -14,7 +14,7 @@ export default function PropTypes({carro, marca, ano}) {
 
 //OBS.: para acessar o propType, tem que ser com letra minuscula. É diferente da variável declarada em cima.
 PropType.propTypes = {
-    carro: PropType.string.isRequired, //isRequired é para dizer que é obrigatório.
+    carro: PropType.string.isRequired, // *? isRequired é para dizer que é obrigatório.
     marca: PropType.string,
     ano: PropType.number
 }
