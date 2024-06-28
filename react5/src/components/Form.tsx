@@ -24,9 +24,7 @@ export default function Form() {
 
         console.log(`O username é: ${userNameSetup} e a senha: ${passwordSetup}`)
     }
-
-    console.log(name);
-
+    
     return(
         <div>
             <form onClick={preventForm} className={formStyle.form}>
