@@ -10,6 +10,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './routes/Home.tsx'
 import Contact from './routes/Contact.tsx'
 import ErroPage from './routes/ErroPage.tsx'
+import ContactDetails from './routes/ContactDetails.tsx'
 
 // * | Configuração básica sem children(sem respeitar a ordem (do App pra depois poder chamar o Outlet, ou seja, o App vai ser o pai e depois que vem os outros, irá ter uma hierarquia)) |
 //const router = createBrowserRouter([
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
       {
         path: "contact", 
         element: <Contact />
+      },
+      // * Nested Routes -> carregar coisas de APIs e etc. 
+      {
+        path: "contact/:id", // -> Dependendo do id, vai aparecer algo
+        element: <ContactDetails />
       }
     ]
   }
