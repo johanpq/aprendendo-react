@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './components/Footer'
 
 // ! Reaaproveitamento de estruturas
 import { Outlet } from 'react-router-dom' // O contéudo da rota vai ser inserido no outlet
@@ -14,7 +15,7 @@ function App() {
         <Navbar/>
         <div>React Router</div>
         <Outlet />
-        <div>Footer</div>
+        <Footer />
       </div>
     </>
   )

@@ -1,0 +1,13 @@
+.social_icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 80vh;
+    list-style: none;
+}
+
+.social_icons svg {
+    fill: aqua;
+    font-size: 2em;
+    cursor: pointer;
+}
